@@ -1,9 +1,6 @@
 <ul>
 <?php while (have_posts()) : the_post(); ?>
-    <li>
-        <?php get_title() ?>
-        <?php the_excerpt() ?>
-    </li>
+    <li><?php get_title() ?></li>
 <?php endwhile ?>
 </ul>
 
