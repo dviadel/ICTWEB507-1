@@ -1,6 +1,7 @@
+<h1>My List of Animals</h1>
 <ul>
-<?php while (have_posts()) : the_post(); ?>
-    <li><?php get_title() ?></li>
-<?php endwhile ?>
+<? foreach($animals as $animal) : ?>
+    <li><?= $animal ?></li>
+<? endforeach ?>
 </ul>
 
