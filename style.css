@@ -6,31 +6,40 @@ Version: 1.0
 */
 
 body {
-    background: yellow;
+    font-family: arial;
 }
- 
 
-.bar {
+
+.row {
+    display: flex;
     list-style: none;
     padding: 0;
-    display: flex;
+    flex-wrap: wrap;
 }
 
-.bar-item {
-    padding: .5em;
+.column {
+    flex: 1;
+    padding: 1em;
+    flex-basis: 300px;
 }
 
-.bar img {
-    max-width: 100%;
+.column img {
+    width: 100%;
     height: auto;
 }
 
 .card {
     box-shadow: 0 0 4px 0 #00000050;
-    border-radius: 6px;
-    padding: 1em;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-title {
     margin: 0;
+}
+
+.card-image {
+    order: -1;
+    margin: -1.5em -1.5em 1em;
 }
