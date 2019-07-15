@@ -4,3 +4,33 @@ Author: Tiago Pires
 Description: A theme that speaks the truth
 Version: 1.0
 */
+
+body {
+    background: yellow;
+}
+ 
+
+.bar {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.bar-item {
+    padding: .5em;
+}
+
+.bar img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card {
+    box-shadow: 0 0 4px 0 #00000050;
+    border-radius: 6px;
+    padding: 1em;
+}
+
+.card-title {
+    margin: 0;
+}
