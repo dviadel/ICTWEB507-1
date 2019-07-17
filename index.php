@@ -7,20 +7,20 @@
     <ul class="grid">
 
 
-    <?php $x = 1; while($x <= 12) : ?>
+    <?php while(have_posts()) : the_post(); ?>
 
         <li class="grid-item">
             <article class="card">
-                <h2>Post Title</h2>
-                <img src="http://placehold.it/300x200">
+                <h2><?php the_title() ?></h2>
+                <?php the_post_thumbnail('thumbnail'); ?>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mi ante, tincidunt eget aliquet eget, consequat ut urna. Nunc nec hendrerit ligula. 
+                    <?php the_content() ?> 
                 </p>
                 <a>Read More</a>
             </article>
         </li>
 
-    <?php $x++; endwhile ?>
+    <?php endwhile ?>
 
     </ul>
 </body>
