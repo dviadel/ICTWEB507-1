@@ -6,7 +6,8 @@
     <h1>Latest News</h1>
     <ul class="grid">
 
-    <?php $x = 1; while($x <= 12) { ?>
+
+    <?php $x = 1; while($x <= 12) : ?>
 
         <li class="grid-item">
             <article class="card">
@@ -19,7 +20,7 @@
             </article>
         </li>
 
-    <?php $x++; } ?>
+    <?php $x++; endwhile ?>
 
     </ul>
 </body>
